@@ -6,53 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+
+<style>
+
+    .formulario {
+      border: 1px solid black;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+  </style>
+
+
+
+ <body class="formulario">
+    <h1>Club viejuners</h1>
+    <h3>Formulario de admisión</h3>
+  <form>
+
+    <lable for="name"><b>Nombre:</b><br></lable>
+    <input type="text" placeholder="Escriba aqui..." id="name"><br>
+    <br>
+
+    <lable for="lastname"><b>Apellidos:</b><br></lable>
+    <input type="text" placeholder="Escriba aqui..." id="lastname"><br>
+    <br>
+
+    <lable for="Age"><b>Edad:</b><br></lable>
+    <input type="number" placeholder="Escriba aqui..." id="Age">
+    <br>
+
+    <p><b>Sexo:</b></p>
+
+        <input type="radio" id="Hombre" name="Sexo" value="Hombre">
+        <lable for="Hombre">Hombre</lable>
     
-   <h3>Rellena tu formulario</h3>
+        <input type="radio" id="Mujer" name="Sexo" value="Mujer">
+        <label for="Mujer">Mujer</label>
+   
+        <input type="radio" id="Otro" name="Sexo" value="Otro">
+        <lable for="Otro">Otro</lable><br>
+    <br>
 
-<form>
-
-<lable for="name"><b>Nombre:</b></lable>
-    <input type="text" placeholder="Escribe aqui..." id="name"><br>
-<br>
-<lable for="lastname"><b>Apellidos:</b></lable>
-    <input type="text" placeholder="Escribe aqui..." id="lastname"><br>
-<br>
-<lable for="Age"><b>Edad:</b></lable>
-    <input type="number" placeholder="Escribe aqui..." id="Age"><br>
-<p><b>Sexo:</b></p> 
-
-<lable for="Gender">Hombre</lable>
-    <input type="radio" placeholder="Escribe aqui..." id="Gender">
-
-<label for="Gender">Mujer</label>
-    <input type="radio" id="opcion2" name="options" />
-
-<lable for="Gender">Otro</lable>
-    <input type="radio" placeholder="Escribe aqui..." id="Gender"><br>
-<br>
-<label for="options>">Me siento viejuner</label>
+    <label for="options>">Me siento viejuner</label>
     <input type="checkbox" id="option"><br>
-<br>
+    <br>
 
-<label>Escribe algo sobre tí</label>
-    
-<br>
+    <label for="sobre ti"><b>Escribe algo sobre tí:</b></label>
+    <textarea id="Sobre ti" name="Sobre ti" placeholder="Escriba aqui..."  rows="5" cols="60"></textarea>
+    <br>
 
-<label>Tus circunstancias:</label>
-<input >
+    <br>
 
-Correo electrónico: correo
+    <label for="circunstancias"><b>Tus circunstancias:</b></label><br>
+    <textarea id="circunstancias" name="circunstancias" placeholder="Escriba aqui..."  rows="5" cols="50"></textarea>
+    <br><br>
 
-Teléfono: teléfono
+    <lable for="email"><b>Correo electrónico:</b></lable>
+    <input type="email" placeholder="ejemplo@viejuners.com" id="email" required><br>
+    <br>
 
-</form>
+    <lable for="telefono"><b>Teléfono:</b></lable>
+    <input type="tel" placeholder="+34 xxx xxx xxx" id="telefono" required><br>
+    <br>
 
 
+<button>Envia tu formulario</button>
 
-
-
-
-
+  </form>
 </body>
 </html>
