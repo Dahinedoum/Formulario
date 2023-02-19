@@ -6,7 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
-</body>
-</html>
+
+<style>
+   
+    #formulario {
+      font-size: large;
+      text-align: center;
+      font-style:italic;
+      font-weight: bold;
+      margin: 100px;
+      background-color: rgba(8, 160, 165, 0.829);
+      padding: 12px 20px;
+    }
+      
+    #formulario h1{
+        color: rgb(110, 68, 17);
+    }
+
+
+    input[type="range"]::after {
+      content: "€";
+      margin-right: -15px;
+     }
+
+</style>
+
+
+
+<body id="formulario">
+<h1><strong>Los ladronzuelos de bicicletas</strong></h1>
+    <form>
+        <lable for="fecha"><b>Dia:</b></lable>
+         <input type="date" id="fecha"><br>
+            <br>
+       
+        <lable for="tiempo"><b>Hora:</b></lable>
+         <input type="time" id="tiempo"><br>
+            <br>
+
+        <lable for="Color"><b>Color de la bicicleta:</b></lable>
+         <input type="Color" id="tiempo"><br>
+            <br>
+
+        <lable for="Rango de precio"><b>Rango de precio:</b></lable>
+         <input type="range" id="Rango de precio" min="0" max="500" step="10"><br>
+            <br>
+
+        <lable for="tipo"><b>Tipo de bicicleta:</b></lable>
+            <select id="tipo" name="bicicletas">
+                 <option value="" disabled selected>Paseo</option>
+                 <option value="Señorial">Señorial</option>
+                 <option value="Anti-plebeyos">Anti-plebeyos</option>
+                 <option value="PorEncimaDelHombro">PorEncimaDelHombro</option>
+
+                 <option value="" disabled selected>Montaña</option>
+                 <option value="Gamusinos">Gamusinos</option>
+                 <option value="Anti-plebeyos">Hueleflores premium</option>
+                 <option value="PorEncimaDelHombro">Fango lover</option>
+
+                 <option value="" disabled selected>Carreras</option>
+                 <option value="Metroymedio">Metroymedio</option>
+                 <option value="Anti-plebeyos">3 de la tarde. Fluorescente edition</option>
+                 <option value="PorEncimaDelHombro">Grupitors</option>
+
+                 <option value="" disabled selected>Seleciona tu bicicleta</option>
+             </select><br>
+            <br>
+        <label for="Accesorios"><b>Accesorios:</b></label><br>
+             <select id="Accesorios" name="Accesorios" multiple> 
+                 <option value="Ruedines">Ruedines</option>
+                 <option value="Pegatinas">Pegatinas</option>
+                 <option value="Cestita">Cestita</option>
+                 <option value="Bomba de aire">Bomba de aire</option>
+                 <option value="Timbre">Timbre</option>
+                 <option value="Foco">Foco</option>
+            </select><br>
+            <br>
+
+        <label for="Marca"><b>¿Qué marca era?</b></label><br>
+            <select id="Marca" name="marca"> 
+                <option value="specialized">specialized</option>
+                <option value="trek">trek</option>
+                <option value="merida">merida</option>
+                <option value="scott">scott</option>
+                <option value="giant">giant</option>
+                <option value="cube">cube</option>
+                <option value="lapierre">lapierre</option>
+                <option value="orbea">orbea</option>
+                <option value="cannondale">cucannondalebe</option>
+                <option value="bmc">bmc</option>
+                <option value="canyon">canyon</option>
+                <option value="look">look</option>
+                <option value="protek">protek</option>
+                <option value="megamo">megamo</option>
+                <option value="pinarello">pinarello</option>
+                <option value="bianchi">bianchi</option>
+                <option value="bh">bh</option>
+                <option value="factor">factor</option>
+                <option value="ghost">ghost</option>
+                <option value="cervélo">cervélo</option>
+                <option value="argon">argon</option>
+           </select><br>
+
+
+           
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     </body>
+ </html>
